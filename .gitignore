@@ -1,0 +1,9 @@
+# File with secrets should not be commited
+.env
+
+# The most popular names for virtual environments
+myenv/
+venv/
+
+# Ignore pycache
+**/__pycache__/
