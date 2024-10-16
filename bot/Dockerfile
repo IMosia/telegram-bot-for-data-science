@@ -9,13 +9,13 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Copy the requirements file into the container at /app
-COPY statbot/requirements.txt /app/
+COPY /requirements.txt /app/
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the working directory contents into the container at /app
-COPY statbot/stat_bot.py /app
+COPY  /. /app
 COPY /src /app/src
 
 # Make port 80 available to the world outside this container
